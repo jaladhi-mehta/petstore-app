@@ -1,0 +1,12 @@
+name: Post-Merge Actions
+'on':
+  pull_request:
+    types:
+      - closed
+jobs:
+  merged_job:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke API
+        run: echo "Invoke API!!"
