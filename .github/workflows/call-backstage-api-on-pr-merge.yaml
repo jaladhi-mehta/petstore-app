@@ -11,6 +11,6 @@ jobs:
       - name: Invoke API
         run: >
           curl -X POST
-          "https://dev-rhdh.prism-dev.dst.ibm.com/api/deploy-cloud-blueprint/deploy-blueprint"
+          "https://backstage-developer-hub-jaladhi-rhdh.pes-dev-e6615681e74d1ae8dcbb77cfdab239d6-0000.eu-de.containers.appdomain.cloud/api/deploy-cloud-blueprint/deploy-blueprint"
           \            
             -H "Content-Type: application/json"
