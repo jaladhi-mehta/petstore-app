@@ -1,4 +1,4 @@
-# Petstore Application Backstage Test
+# Petstore Application
 
 This repository contains a Pet Store application. Follow the instructions below to run the application using Docker Compose.
 
