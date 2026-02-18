@@ -1,0 +1,16 @@
+name: Post-Merge Actions-Backstage-API-Invoke
+'on':
+  pull_request:
+    types:
+      - closed
+jobs:
+  merged_job:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke API
+        run: >
+          curl -X POST
+          "https://dev-rhdh.prism-dev.dst.ibm.com/api/deploy-cloud-blueprint/deploy-blueprint"
+          \            
+            -H "Content-Type: application/json"
